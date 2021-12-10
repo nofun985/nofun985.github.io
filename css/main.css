@@ -8,11 +8,13 @@
 
 /* Navbar section */
 .navbar-section {
-    background: linear-gradient(45deg, #D38312, #A83279);
+    background: linear-gradient(45deg, #09203f, #537895);
     animation: gradient 30s ease infinite alternate;
     background-size: 600% 600%;
     border-bottom: 1px solid rgba(0, 0, 255, 0.1);
-    height: 50px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }
 
 @keyframes gradient {
@@ -51,7 +53,7 @@
     position: relative;
     width: 100%;
     height: 120vh;
-    background: linear-gradient(45deg, #D38312, #A83279);
+    background: linear-gradient(45deg, #09203f, #537895);
     overflow: hidden;
 }
         /* Animation  shapes*/
