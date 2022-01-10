@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
+    box-sizing: border-box;
 }
 
 /* Navbar section */
@@ -55,6 +56,70 @@
     height: 120vh;
     background: linear-gradient(45deg, #09203f, #537895);
     overflow: hidden;
+}
+.home-about__me {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    z-index: 10;
+}
+.home-about__me .home-about__img img {
+    width: 230px;
+    border-radius: 50%;
+}
+
+.home-about__me h2 {
+    font-weight: 600;
+    padding-top: 30px;
+    color: #fff;
+    position: relative;
+}
+
+.home-about__me h2::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -3px;
+    background: #fff;
+    width: 70%;
+    transition: .5s;
+    left: 0;
+    animation: ease ;
+}
+.home-about__me p{
+    color: #fff;
+    font-size: 12px;
+}
+
+.home-about__me:hover h2::after{
+    width: 100%;
+}
+
+.home-contact ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.home-contact ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2980b9;
+    color: #fff;
+    transition: .5s;
+}
+
+.home-contact ul li a:hover{
+    transform: rotate(360deg);
 }
         /* Animation  shapes*/
 .animation-box {
@@ -257,8 +322,3 @@
         background-position-x: -1000px;
     }
 }   /* /Animation wave */
-
-
-
-
-/* /Home section */
