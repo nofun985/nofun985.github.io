@@ -1,11 +1,11 @@
 var bg = document.querySelector('.item-bg');
-var items = document.querySelectorAll('.news__item');
-var item = document.querySelector('.news__item');
+var items = document.querySelectorAll('.card__item');
+var item = document.querySelector('.card__item');
 
 if($(window).width() > 800) {
-    $(document).on("mouseover", ".news__item", function (_event, _element) {
+    $(document).on("mouseover", ".card__item", function (_event, _element) {
 
-        var newsItem = document.querySelectorAll('.news__item');
+        var newsItem = document.querySelectorAll('.card__item');
         newsItem.forEach(function (element, index) {
             element.addEventListener('mouseover', function () {
                 var x = this.getBoundingClientRect().left;
@@ -14,8 +14,8 @@ if($(window).width() > 800) {
                 var height = this.getBoundingClientRect().height;
 
                 $('.item-bg').addClass('active');
-                $('.news__item').removeClass('active');
-                // $('.news__item').removeClass('active');
+                $('.card__item').removeClass('active');
+                // $('.card__item').removeClass('active');
 
 
                 bg.style.width = width + 'px';
@@ -25,7 +25,7 @@ if($(window).width() > 800) {
 
             element.addEventListener('mouseleave', function () {
                 $('.item-bg').removeClass('active');
-                $('.news__item').removeClass('active');
+                $('.card__item').removeClass('active');
             });
 
         });
@@ -33,7 +33,7 @@ if($(window).width() > 800) {
     });
 }
 
-var swiper = new Swiper('.news-slider', {
+var swiper = new Swiper('.card-slider', {
     effect: 'coverflow',
     grabCursor: true,
     loop: true,
@@ -57,20 +57,20 @@ var swiper = new Swiper('.news-slider', {
     },
     simulateTouch: true,
     navigation: {
-        nextEl: '.news-slider-next',
-        prevEl: '.news-slider-prev'
+        nextEl: '.card-slider-next',
+        prevEl: '.card-slider-prev'
     },
     pagination: {
-        el: '.news-slider__pagination',
+        el: '.card-slider__pagination',
         clickable: true
     },
     on: {
         init: function () {
             var activeItem = document.querySelector('.swiper-slide-active');
 
-            var sliderItem = activeItem.querySelector('.news__item');
+            var sliderItem = activeItem.querySelector('.card__item');
 
-            $('.swiper-slide-active .news__item').addClass('active');
+            $('.swiper-slide-active .card__item').addClass('active');
 
             var x = sliderItem.getBoundingClientRect().left;
             var y = sliderItem.getBoundingClientRect().top;
@@ -88,21 +88,21 @@ var swiper = new Swiper('.news-slider', {
 });
 
 swiper.on('touchEnd', function () {
-    $('.news__item').removeClass('active');
-    $('.swiper-slide-active .news__item').addClass('active');
+    $('.card__item').removeClass('active');
+    $('.swiper-slide-active .card__item').addClass('active');
 });
 
 swiper.on('slideChange', function () {
-    $('.news__item').removeClass('active');
+    $('.card__item').removeClass('active');
 });
 
 swiper.on('slideChangeTransitionEnd', function () {
-    $('.news__item').removeClass('active');
+    $('.card__item').removeClass('active');
     var activeItem = document.querySelector('.swiper-slide-active');
 
-    var sliderItem = activeItem.querySelector('.news__item');
+    var sliderItem = activeItem.querySelector('.card__item');
 
-    $('.swiper-slide-active .news__item').addClass('active');
+    $('.swiper-slide-active .card__item').addClass('active');
 
     var x = sliderItem.getBoundingClientRect().left;
     var y = sliderItem.getBoundingClientRect().top;
