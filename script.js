@@ -15,7 +15,7 @@ if($(window).width() > 800) {
 
                 $('.item-bg').addClass('active');
                 $('.card__item').removeClass('active');
-                // $('.card__item').removeClass('active');
+                $('.card__item').removeClass('active');
 
 
                 bg.style.width = width + 'px';

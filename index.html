@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Nomozov Asror | Portfolio Web site</title>
     <link rel="stylesheet" href="./css/main.css"> <!-- Main CSS style-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Bootsrtap-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!--font-awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> <!-- JS Ajax normalize-->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'> <!-- JS Ajax Swipper-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
 </head>
 <body>
     <!-- Navbar section start-->
@@ -25,16 +29,16 @@
               <div class="navbar-items collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link under-l" href="#">Home</a>
+                    <a class="nav-link under-l" href="#home-section">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="under-l nav-link" href="#">About me</a>
+                    <a class="under-l nav-link" href="#about-me__section">About me</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link under-l" href="#">Portfolio</a>
+                    <a class="nav-link under-l" href="#portfolio-section">Portfolio</a>
                   </li> 
                   <li class="nav-item">
-                    <a class="nav-link under-l" href="#">Contact</a>
+                    <a class="nav-link under-l" href="#contact-section">Contact</a>
                   </li>   
                 </ul>
               </div>
@@ -44,7 +48,7 @@
     <!-- /Navbar section end-->
 
     <!-- Home section start-->
-    <section class="home-section">
+    <section class="home-section" id="home-section">
       <div class="home-about__me">
           <div class="home-about__img">
             <img src="./img/home-img1.jpg" alt="home-img me">
@@ -76,8 +80,7 @@
           <li></li>
         </ul>
       </div>
-      <div class="wave">
-      </div>
+      <div class="wave"></div>
 </section>
  <!-- /Home section end-->
 
@@ -85,10 +88,10 @@
 <section class="about-me__section" id="about-me__section">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-sm-12 col-md-12 col-lg-6">
         <img src="./img/aboout-me.jpg" alt="About me img" class="about-me__img img-thumbnail">
       </div>
-      <div class="col about-me__info">
+      <div class="col-sm-12 col-md-12 col-lg-6 about-me__info">
         <h3>Discover</h3>
         <h1>About Me</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi perferendis quos reiciendis nulla architecto sequi quod magnam impedit numquam sed. Commodi aut deleniti placeat veniam magni voluptatem saepe expedita quaerat.</p>
@@ -111,18 +114,19 @@
       </div>
     </div>
   </div>
+  <div class="wave2"></div>
 </section>
 <!-- /About me Section end-->
 
 <!-- Services start-->
 <section class="services-section">
-  <div class="container">
+  <div class="container servis-margin">
     <div class="services-info">
       <h5>What I Do</h5>
       <h2>My Services</h2>
     </div>
-    <div class="row">
-      <div class="col">
+    <div class="row mb-5">
+      <div class="col-sm-12 col-md-12 col-lg-4">
         <div class="services-card">
           <div class="services-card__info">
             <i class="fas fa-pencil-ruler"></i>
@@ -131,7 +135,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-sm-12 col-md-12 col-lg-4">
         <div class="services-card">
           <div class="services-card__info">
             <i class="fas fa-draw-polygon"></i>
@@ -140,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-sm-12 col-md-12 col-lg-4">
         <div class="services-card">
           <div class="services-card__info">
             <i class="fas fa-users"></i>
@@ -290,6 +294,8 @@
      <!-- new-slider end -->
   </div>
   <!-- wrapper end -->
+  <div class="portfolio-circle"></div>
+  <div class="portfolio-circle2"></div>
 <svg hidden="hidden">
   <defs>
     <symbol id="icon-arrow-left" viewBox="0 0 32 32">
@@ -304,6 +310,76 @@
 </svg>
 </section>
 <!-- /Portfolio section end-->
+
+<!-- Contact section start -->
+<section class="contact-section" id="contact-section">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-sm-12 col-md-5 col-lg-5">
+        <div class="contact-info__items mt-2">
+          <h1>Contact us</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maxime similique pariatur dolorum ducimus ea ad illum doloribus corporis nostrum?</p>
+          <div class="contact-number">
+            <a href="tel:+998919781455"><i class="fas fa-mobile-alt"></i>+998 91 978 14 55</a>
+            <a href="mailto:nofun985@gmail.com"><i class="far fa-envelope"></i>nofun@gmail.com</a>
+            <a href="https://goo.gl/maps/zZyYfB8yUzBsAYf26" target="_blank"><i class="fas fa-map-marked-alt"></i>Termez, Surxondaryo</a>
+          </div>
+          <div class="contact-me">
+            <ul>
+              <li><a target="_blank" href="https://t.me/nofun985"><i class="fab fa-telegram-plane"></i></a></li>
+              <li><a target="_blank" href="https://facebook.com/asror.nomozov.1"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/nomozov_asror"><i class="fab fa-instagram"></i></a></li>
+              <li><a target="_blank" href="https://github.com/nofun985"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+          <div class="contact-circle"></div>
+          <div class="contact-circle__2"></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-7 col-lg-7">
+        <div class="contact-forms mt-2 mb-lg-5">
+          <div class="row">
+            <div class="col">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" tabindex="1">
+            </div>
+            <div class="col">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname">
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col">
+              <label for="mail">Mail:</label>
+              <input type="email" id="mail">
+            </div>
+            <div class="col">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone">
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col">
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" cols="30" rows="7"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="mt-5">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Contact section end -->
+
+<!-- Footer section start -->
+<footer class="footer-section">
+  <div class="footer-section__title">
+    <p>Terms of Use | Privacy Policy</p>
+    <p>©2022 Termiz</p>
+  </div>
+</footer>
+<!-- Footer section end -->
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
